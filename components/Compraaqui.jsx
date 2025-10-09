@@ -182,7 +182,7 @@ function Compraaqui() {
                     Compra aquí
                   </Link>
                 </p>
-                {/* BCI */}
+                {/* BCI
                 <p>
                   <img
                     src={bcibanco.src}
@@ -201,7 +201,7 @@ function Compraaqui() {
                   >
                     Compra aquí
                   </Link>
-                </p>
+                </p> */}
               </div>
             </div>
           ))}

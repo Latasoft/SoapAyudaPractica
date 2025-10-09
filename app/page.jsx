@@ -1,8 +1,8 @@
 
 import Link from 'next/link';
-import Compraaqui from 'components/Compraaqui';
-import corazon from 'public/corazon.png';
-import CarruselImages from 'components/carrusel';
+import Compraaqui from '../components/Compraaqui.jsx';
+import corazon from '../public/corazon.png';
+import CarruselImages from '../components/carrusel.jsx';
 
 export default function Page() {
 
