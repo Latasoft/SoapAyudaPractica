@@ -1,12 +1,11 @@
 {
-  "vigencia": "01/03/2026",
+  "vigencia": "01/04/2026",
   "items": [
     { "label": "Autos",              "precio": "$9.900" },
     { "label": "Jeep",               "precio": "$9.900" },
     { "label": "St. Wagon",          "precio": "$9.900" },
     { "label": "Camioneta",          "precio": "$12.000" },
     { "label": "Furgón",             "precio": "$12.000" },
-    { "label": "Casa Rodante",        "precio": "$12.000" },
     { "label": "Carro Arrastre",      "precio": "$6.000" },
     { "label": "Minibus particular",  "precio": "$28.000" },
     { "label": "Moto",               "precio": "$60.000" }
