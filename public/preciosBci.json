@@ -1,0 +1,16 @@
+[
+    {
+        "mes": "Desde 01/09/2026",
+        "seguros": [
+            {
+                "nombre": "images/logoBci.png",
+                "compra": "https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=4C4BD1321EBA80CBD23FF4709FD4CD06",
+                "precios": [
+                    { "vehiculoTipo": "Camión" , "precio": 29000 },
+                    { "vehiculoTipo": "Maquinaria industrial" , "precio": 13000 },
+                    { "vehiculoTipo": "Semiremolque" , "precio": 9000 }
+                ]
+            }
+        ]
+    }
+]
