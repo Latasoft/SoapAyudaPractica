@@ -183,25 +183,24 @@ function Compraaqui() {
                   </Link>
                 </p>
 
-                {/* BCI */}
+                              {/* BCI - Inactivo temporalmente (pendiente banners por fundación) */}
                 <p className="mb-4">
                   <img
                     src={bcibanco.src}
                     alt=""
-                    className="inline-block w-8 mr-2"
+                    className="inline-block w-8 mr-2 opacity-50"
                   />
-                  <Link
-                    href={`/compraaquimut${item.fundacion}`}
+                  <span
                     className="
-                      transition-all duration-300 ease-in-out 
-                      shadow-lg shadow-[rgba(0,0,0,0.3)] hover:shadow-[rgba(0,0,0,0.6)]
                       inline-block rounded-full px-5 py-2
-                      bg-[linear-gradient(#22beeb,#1e5db2)]
-                      text-white text-lg no-underline 
+                      bg-gray-400
+                      text-white text-lg
+                      cursor-not-allowed
+                      opacity-70
                     "
                   >
                     Compra aquí
-                  </Link>
+                  </span>
                 </p>
 
                 {/* BCI
