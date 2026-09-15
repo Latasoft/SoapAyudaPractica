@@ -15,21 +15,25 @@ const compraaqui = [
     image: cruzroja,
     fundacion: "cr",
     info: "La Cruz Roja Chilena es una institución humanitaria y voluntaria que brinda apoyo en situaciones de emergencia y promueve la salud y el bienestar de la sociedad.",
+    bciLink: "https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=5089FD5BAEA6DFBCD522478186E96C4A",
   },
   {
     image: dehermes,
     fundacion: "dh",
     info: "DHERMES es un Refugio de Animales con 19 años resguardando a cientos de perritos abandonados y vulnerables que buscan hogar.",
+    bciLink: "https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=545AD9D11D6A813AFF99488F0A59BEC2",
   },
   {
     image: bomberosamaericanavalparariso,
     fundacion: "bav",
     info: "La Primera Compañía de Bomberos de Valparaiso fue fundada en 1851.Comenzó con 151 voluntarios, todos connotados porteños y en su mayoría ingleses y norteamericanos. En la actualidad están conformadas por más de 50 primerinos, quienes día a día permanecen atentos al ulular de la sirena para responder si el deber llama.",
+    bciLink: "https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=A5BBBFE6C5D5648F62F13E0BFDFA9362",
   },
   {
     image: fundacionapoyandote,
     fundacion: "fa",
     info: "Fundación Apoyándote está conformada por padres con hijos en condición de Espectro Autista y fue creada con el objetivo de apoyar a las familias que no puedan costear los tratamientos que tanto cuesta pagar.",
+    bciLink: "https://soapweb.bciseguros.cl/web/DatosVehiculo.aspx?Convenios=A76931BC88E802A8A8F526A52C222685",
   },
   {
     image: soaplogo,  
@@ -183,25 +187,46 @@ function Compraaqui() {
                   </Link>
                 </p>
 
-                              {/* BCI - Inactivo temporalmente (pendiente banners por fundación) */}
-                <p className="mb-4">
-                  <img
-                    src={bcibanco.src}
-                    alt=""
-                    className="inline-block w-8 mr-2 opacity-50"
-                  />
-                  <span
-                    className="
-                      inline-block rounded-full px-5 py-2
-                      bg-gray-400
-                      text-white text-lg
-                      cursor-not-allowed
-                      opacity-70
-                    "
-                  >
-                    Compra aquí
-                  </span>
-                </p>
+                                              {item.bciLink ? (
+                  <p className="mb-4">
+                    <img
+                      src={bcibanco.src}
+                      alt=""
+                      className="inline-block w-8 mr-2"
+                    />
+                    <Link
+                      href={item.bciLink}
+                      className="
+                        transition-all duration-300 ease-in-out 
+                        shadow-lg shadow-[rgba(0,0,0,0.3)] hover:shadow-[rgba(0,0,0,0.6)]
+                        inline-block rounded-full px-5 py-2
+                        bg-[linear-gradient(#22beeb,#1e5db2)]
+                        text-white text-lg no-underline 
+                      "
+                    >
+                      Compra aquí
+                    </Link>
+                  </p>
+                ) : (
+                  <p className="mb-4">
+                    <img
+                      src={bcibanco.src}
+                      alt=""
+                      className="inline-block w-8 mr-2 opacity-50"
+                    />
+                    <span
+                      className="
+                        inline-block rounded-full px-5 py-2
+                        bg-gray-400
+                        text-white text-lg
+                        cursor-not-allowed
+                        opacity-70
+                      "
+                    >
+                      Compra aquí
+                    </span>
+                  </p>
+                )}
 
                 {/* BCI
                 <p>
