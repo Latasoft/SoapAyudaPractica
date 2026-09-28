@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import soapayuda from 'public/soapayuda .png';
-import segurosGenerales from 'public/segurosgenerales.png';
 
 const navItems = [
     { linkText: 'Inicio', href: '/' },
@@ -49,9 +48,7 @@ const Navbar = () => {
                     </p>
                 )}
                 {!navBarScrollChange && (
-                    <Link href="/segurosgenerales" className="inline-block shrink-0 w-24 sm:w-16 md:w-24 lg:w-32 transition-all duration-300 ease-in-out hover:opacity-80">
-                        <img src={segurosGenerales.src} alt="Seguros Generales" className="h-auto w-full" />
-                    </Link>
+                    <Link href="/segurosgenerales" className="inline-flex shrink-0 items-center justify-center whitespace-nowrap rounded-full px-4 py-2 lg:px-5 text-xs sm:text-xs md:text-sm lg:text-base font-bold text-white no-underline bg-[linear-gradient(#22beeb,#1e5db2)] shadow-md shadow-[rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out hover:bg-[linear-gradient(#1e5db2,#22beeb)] hover:text-yellow-200 hover:shadow-lg">Seguros Generales</Link>
                 )}
             </div>
         </nav>
