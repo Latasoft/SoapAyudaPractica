@@ -49,9 +49,9 @@ const Navbar = () => {
                     </p>
                 )}
                 {!navBarScrollChange && (
-                    <a href="https://seguroobligatorio.cl/segurosgenerales" target="_blank" rel="noopener noreferrer" className="inline-block shrink-0 w-24 sm:w-16 md:w-24 lg:w-32 transition-all duration-300 ease-in-out hover:opacity-80">
+                    <Link href="/segurosgenerales" className="inline-block shrink-0 w-24 sm:w-16 md:w-24 lg:w-32 transition-all duration-300 ease-in-out hover:opacity-80">
                         <img src={segurosGenerales.src} alt="Seguros Generales" className="h-auto w-full" />
-                    </a>
+                    </Link>
                 )}
             </div>
         </nav>
