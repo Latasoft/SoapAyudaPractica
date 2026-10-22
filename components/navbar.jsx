@@ -41,7 +41,7 @@ const Navbar = () => {
                             (navBarScrollChange ) ? (
                                 <Link key={index} href={item.href} className={` inline-flex text-left justify-start items-center whitespace-nowrap text-sm md:text-base lg:text-lg font-bold no-underline hover:underline transition-all duration-300 ease-in-out ${navBarScrollChange ? 'text-[#22beeb] hover:text-[#a4ebff]' : 'text-[#1e5db2] hover:text-[#22beeb]'} `}>{item.linkText}</Link>
                             ) :
-                                (index != 0 && (
+                                ( (
                                     <Link key={index} href={item.href} className={` inline-flex text-left justify-start items-center whitespace-nowrap text-sm md:text-base lg:text-lg font-bold no-underline hover:underline transition-all duration-300 ease-in-out ${navBarScrollChange ? 'text-[#22beeb] hover:text-[#a4ebff]' : 'text-[#1e5db2] hover:text-[#22beeb]'} `}>{item.linkText}</Link>
                                 ))
                         ))}
