@@ -32,7 +32,7 @@ const Footer = () => {
                     </p>
                     <address className=" not-italic mt-2">
                     <p className=" font-normal w-full"><span className={` text-nowrap `}><a href="tel:+56322233491">Teléfono (32) 2233 491</a>.</span> <span className={` text-nowrap `}>Av. Colón 3192. Valparaíso</span></p>
-                        <p className=" font-normal w-full"><span className={` text-nowrap `}>Lunes a viernes de</span> <span className={` text-nowrap `}>8:30 hrs. a 14:00 hrs. y</span> <span className={` text-nowrap `}>de 15:00 hrs. a 18:00 hrs.</span></p>
+                        <p className=" font-normal w-full"><span className={` text-nowrap `}>Lunes a viernes de</span> <span className={` text-nowrap `}>8:30 hrs. a 14:00 hrs.</span></p>
                         
                     </address>
                 </section>
